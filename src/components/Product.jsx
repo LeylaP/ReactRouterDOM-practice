@@ -7,12 +7,14 @@ export default function Product({ product }) {
   const navigation = useNavigate();
 
   return (
-    <div style={{ marginBottom: "40px", backgroundColor: "orange" }}>
-      <div> kÜrün Detayı</div>
-      <h3>İsim:{name}</h3>
+    <div class="box  p-4 rounded-2xl box-decoration-slice bg-gradient-to-r from-cyan-400 to-teal-500 ">
+      <div> Ürün Detayı</div>
+      <h3 class="text-3xl font-bold ">İsim:{name}</h3>
       <h3>Fiyatı: {price}</h3>
       <button onClick={() => navigation("/product-detail/" + id)}>
-        Detaylı Bilgi
+        <span class="box-decoration-slice bg-gradient-to-r from-cyan-600 to-cyan-500 text-white px-2 p-1 rounded-xl">
+          Detaylı bilgi
+        </span>
       </button>
     </div>
   );

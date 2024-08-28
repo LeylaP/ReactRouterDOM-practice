@@ -20,8 +20,61 @@ body{
 .link{
   text-decoration:none;
   font-family: arial;
-  font-weight: 600;
+  font-weight: 400;
   font-size:large;
   margin:0 6px;
-  color:rgba(149, 238, 248, 0.896);
+  color:rgba(22, 130, 142, 0.896);
+  cursor: pointer;
+}
+.not_found{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #3a3f97;
+  text-align: center;
+  
+  height: 60vh;
+}
+.sad_icon{
+  font-size: 50px;
+
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.link-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+}
+.products-div{
+  display: grid;
+  grid-template-columns: 500px 1fr 2fr;
+  gap: 20px;
+
+  justify-content: space-around;
+
+}
+.product-button{
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  background-color: rgba(73, 147, 122, 0.83);
+  font-family:Arial, Helvetica, sans-serif;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+gap:20px;
+}
+.product{
+  flex-direction: column;
+  gap: 20px;
+  background-color: blanchedalmond;
+  align-items: center;
+
 }
